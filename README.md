@@ -127,3 +127,5 @@ mediroute/
 
 [MIT](LICENSE)
 
+
+<!-- commit-log: 2026-02-03T22:41:08 - fix: resolve datetime serialization in JSON -->
