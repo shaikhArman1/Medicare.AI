@@ -131,3 +131,5 @@ mediroute/
 <!-- commit-log: 2026-02-03T22:41:08 - fix: resolve datetime serialization in JSON -->
 
 <!-- commit-log: 2026-02-07T16:30:40 - chore: sync frontend env config with backend routes -->
+
+<!-- commit-log: 2026-02-11T12:21:31 - fix: align data types between Python models and JS -->
