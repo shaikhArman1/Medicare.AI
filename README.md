@@ -135,3 +135,5 @@ mediroute/
 <!-- commit-log: 2026-02-11T12:21:31 - fix: align data types between Python models and JS -->
 
 <!-- commit-log: 2026-02-14T09:25:19 - fix: resolve CORS issue between frontend and backend -->
+
+<!-- commit-log: 2026-02-19T16:57:58 - feat: improve error boundary in React app -->
