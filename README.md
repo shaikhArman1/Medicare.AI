@@ -137,3 +137,5 @@ mediroute/
 <!-- commit-log: 2026-02-14T09:25:19 - fix: resolve CORS issue between frontend and backend -->
 
 <!-- commit-log: 2026-02-19T16:57:58 - feat: improve error boundary in React app -->
+
+<!-- commit-log: 2026-02-23T16:08:07 - chore: update Axios and FastAPI versions -->
