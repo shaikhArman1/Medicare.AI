@@ -139,3 +139,5 @@ mediroute/
 <!-- commit-log: 2026-02-19T16:57:58 - feat: improve error boundary in React app -->
 
 <!-- commit-log: 2026-02-23T16:08:07 - chore: update Axios and FastAPI versions -->
+
+<!-- commit-log: 2026-03-02T15:40:24 - feat: add API endpoint for data aggregation -->
