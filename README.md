@@ -143,3 +143,5 @@ mediroute/
 <!-- commit-log: 2026-03-02T15:40:24 - feat: add API endpoint for data aggregation -->
 
 <!-- commit-log: 2026-03-03T22:37:05 - chore: update Axios and FastAPI versions -->
+
+<!-- commit-log: 2026-03-04T11:03:06 - fix: align data types between Python models and JS -->
