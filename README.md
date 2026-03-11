@@ -147,3 +147,5 @@ mediroute/
 <!-- commit-log: 2026-03-04T11:03:06 - fix: align data types between Python models and JS -->
 
 <!-- commit-log: 2026-03-08T09:01:21 - fix: correct JSON serialization in Python response -->
+
+<!-- commit-log: 2026-03-11T18:18:38 - feat: add retry logic on failed API calls -->
