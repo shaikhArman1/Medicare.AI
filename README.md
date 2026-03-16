@@ -149,3 +149,5 @@ mediroute/
 <!-- commit-log: 2026-03-08T09:01:21 - fix: correct JSON serialization in Python response -->
 
 <!-- commit-log: 2026-03-11T18:18:38 - feat: add retry logic on failed API calls -->
+
+<!-- commit-log: 2026-03-16T22:38:29 - refactor: update async request handling in UI -->
