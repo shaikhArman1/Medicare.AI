@@ -155,3 +155,5 @@ mediroute/
 <!-- commit-log: 2026-03-17T10:42:02 - chore: update Axios and FastAPI versions -->
 
 <!-- commit-log: 2026-03-21T11:08:52 - fix: align data types between Python models and JS -->
+
+<!-- commit-log: 2026-03-22T11:06:15 - fix: resolve CORS issue between frontend and backend -->
