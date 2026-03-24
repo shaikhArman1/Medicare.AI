@@ -157,3 +157,5 @@ mediroute/
 <!-- commit-log: 2026-03-21T11:08:52 - fix: align data types between Python models and JS -->
 
 <!-- commit-log: 2026-03-22T11:06:15 - fix: resolve CORS issue between frontend and backend -->
+
+<!-- commit-log: 2026-03-24T18:49:33 - fix: handle authentication token expiry in UI -->
