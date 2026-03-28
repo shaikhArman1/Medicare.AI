@@ -159,3 +159,5 @@ mediroute/
 <!-- commit-log: 2026-03-22T11:06:15 - fix: resolve CORS issue between frontend and backend -->
 
 <!-- commit-log: 2026-03-24T18:49:33 - fix: handle authentication token expiry in UI -->
+
+<!-- commit-log: 2026-03-28T18:27:48 - feat: improve error boundary in React app -->
