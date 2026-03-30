@@ -161,3 +161,5 @@ mediroute/
 <!-- commit-log: 2026-03-24T18:49:33 - fix: handle authentication token expiry in UI -->
 
 <!-- commit-log: 2026-03-28T18:27:48 - feat: improve error boundary in React app -->
+
+<!-- commit-log: 2026-03-30T12:11:53 - docs: update integration guide for local dev -->
