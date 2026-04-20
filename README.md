@@ -163,3 +163,5 @@ mediroute/
 <!-- commit-log: 2026-03-28T18:27:48 - feat: improve error boundary in React app -->
 
 <!-- commit-log: 2026-03-30T12:11:53 - docs: update integration guide for local dev -->
+
+<!-- commit-log: 2026-04-20T10:57:14 - fix: resolve CORS issue between frontend and backend -->
