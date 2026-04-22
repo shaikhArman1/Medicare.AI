@@ -1,37 +1,53 @@
-# Medicare.AI — Emergency Medical Navigation Platform
+# MediRoute — Emergency Medical Navigation Platform
 
 Patients in medical emergencies waste critical time because no platform tells them *which nearby hospital has their required specialist available right now*. MediRoute solves this by intelligently routing users to the right doctor, at the right hospital, at the right time.
 
 ---
 
-## What It Does
+## Tech Stack
 
-**Smart Doctor & Hospital Discovery**
-- Detects user location and fetches nearby hospitals
-- User searches for a specialist (e.g., "Cardiologist")
-- AI prioritizes hospitals based on doctor availability, distance, and emergency suitability
+### Backend
+| | |
+|---|---|
+| Framework | Flask 3.0.2 |
+| AI / ML | Google Generative AI — `google-generativeai==0.4.0` |
+| Request Handling | Werkzeug 3.0.1 |
+| Environment Config | python-dotenv 1.0.1 |
+| Geolocation | geopy 2.4.1 + custom Haversine implementation |
+| Language | Python |
 
-**Emergency Decision Assistance**
-- Shows hospital details and availability status
-- One-tap call to the hospital reception desk for confirmation
-- Built for speed — fewer taps, faster decisions
+### Frontend
+| | |
+|---|---|
+| Markup | HTML5 (semantic) |
+| Styling | CSS3 — variables, glass-morphism, responsive layout |
+| Fonts | Outfit via Google Fonts |
+| Scripting | Vanilla JavaScript |
+| Maps | Leaflet 1.9.4 with OpenStreetMap tiles |
+| Icons | Font Awesome 6.4.0 |
 
-**Prescription AI**
-- Upload a prescription and get a plain-language breakdown
-- Covers medicine names, dosage instructions, and warnings
-- Designed for patients who struggle with medical terminology
+### Data
+- Mock hospital database (Kolkata-based)
+- Includes: coordinates, specialist availability, contact info
 
 ---
 
-## Tech Stack
+## Architecture
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | HTML, CSS, Vanilla JS |
-| Backend | Python, Flask |
-| AI | Google Gemini API |
-| Hospital Data | Mock JSON (static) |
-| Config | python-dotenv |
+```
+Browser (HTML/CSS/JS + Leaflet)
+        │
+        ▼
+Flask Backend (app.py)
+        │
+        ├── /api/hospitals  ──▶  Haversine distance calc  ──▶  Mock DB
+        │
+        └── Gemini API  ──▶  Prescription AI
+```
+
+- **Client-Server Model** — Flask serves the frontend and exposes REST APIs
+- **Geolocation** — Browser Geolocation API with manual city input as fallback
+- **Distance Calculation** — Custom Haversine formula for real-time proximity ranking
 
 ---
 
@@ -39,8 +55,8 @@ Patients in medical emergencies waste critical time because no platform tells th
 
 ```bash
 # Clone the repo
-git clone https://github.com/harkirat-data/Medicare.AI.git
-cd mediroute
+git clone https://github.com/harkirat-data/Medicare.git
+cd Medicare
 
 # Create virtual environment
 python -m venv venv
@@ -62,16 +78,16 @@ python app.py
 ## Project Structure
 
 ```
-MEDICARE.AI/
+mediroute/
 ├── data/
-│   └── mock_hospitals.py    # Mock hospital dataset
+│   └── mock_hospitals.py    # Kolkata hospital mock data
 ├── static/
 │   ├── css/
 │   │   └── style.css
 │   └── js/
 │       └── script.js
 ├── uploads/                 # Prescription image uploads
-├── app.py                   # Main Flask app
+├── app.py                   # Flask app — routes, Gemini, Haversine
 ├── index.html
 ├── requirements.txt
 ├── .env.example
@@ -80,9 +96,20 @@ MEDICARE.AI/
 
 ---
 
+## Features
+
+- **Hospital Discovery** — finds nearby hospitals based on live user location
+- **Specialist Search** — filter by doctor type (e.g., Cardiologist, Neurologist)
+- **Availability Prioritization** — hospitals ranked by specialist availability
+- **Interactive Map** — Leaflet-powered map with hospital markers
+- **One-tap Contact** — direct call to hospital reception for confirmation
+- **Prescription AI** — upload a prescription, get plain-language explanation via Gemini
+
+---
+
 ## Roadmap
 
-- [ ] Live doctor availability via hospital API integration
+- [ ] Live doctor availability via real hospital API integration
 - [ ] Symptom → specialist AI recommendation
 - [ ] Ambulance routing with optimized navigation
 - [ ] Voice interface for elderly users
@@ -92,16 +119,11 @@ MEDICARE.AI/
 
 ## Built For
 
-&nbsp; Google Solutions Challenge
-
----
-
-## Contributing
-
-Pull requests are welcome. For major changes, open an issue first to discuss what you'd like to change.
+Hackolution — IEM &nbsp;|&nbsp; Google Solutions Challenge
 
 ---
 
 ## License
 
 [MIT](LICENSE)
+
