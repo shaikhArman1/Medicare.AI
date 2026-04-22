@@ -119,7 +119,7 @@ mediroute/
 
 ## Built For
 
-Hackolution — IEM &nbsp;|&nbsp; Google Solutions Challenge
+&nbsp; Google Solutions Challenge
 
 ---
 
