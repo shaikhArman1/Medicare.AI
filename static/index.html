@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare.ai | Your Complete Medical Journey</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-mesh"></div>
+    
+    <nav class="glass-nav">
+        <div class="logo">
+            <i class="fa-solid fa-heart-pulse"></i> Medicare.ai
+        </div>
+        <div class="nav-links">
+            <a href="#discovery" class="active">Hospital Discovery</a>
+            <a href="#prescription">Prescription AI</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Location Modal Overlay -->
+        <div id="location-modal" class="modal-overlay active">
+            <div class="glass-modal location-prompt">
+                <div class="icon-pulse">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h2>Enable Location Services</h2>
+                <p>We need your location to find the right doctor near you in real-time.</p>
+                <div class="modal-actions">
+                    <button id="allow-location" class="btn-primary">Allow Location</button>
+                    <div class="divider"><span>OR</span></div>
+                    <div class="manual-location">
+                        <input type="text" id="manual-city" placeholder="Enter City (e.g., New York)">
+                        <button id="submit-manual-location" class="btn-secondary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 1 & 2: Hospital Discovery & Emergency Assistance -->
+        <section id="discovery" class="active-section">
+            <header class="section-header">
+                <h1>Find the <span>Right Doctor</span>, Right Now</h1>
+                <p>Real-time emergency assistance and doctor availability.</p>
+            </header>
+
+            <div class="search-container glass-panel">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="specialist-search" placeholder="Search for a specialist (e.g., Cardiologist, Pediatrician)">
+                <button id="search-btn" class="btn-primary">Search</button>
+            </div>
+
+            <div class="discovery-layout">
+                <div class="map-container glass-panel">
+                    <div id="map"></div>
+                </div>
+                
+                <div class="results-container">
+                    <div class="results-header">
+                        <h3>Prioritized Results</h3>
+                        <span class="sort-badge"><i class="fa-solid fa-sort"></i> Sorted by Availability & Distance</span>
+                    </div>
+                    <div id="hospital-list" class="hospital-list">
+                        <!-- Filled dynamically -->
+                        <div class="empty-state">
+                            <i class="fa-solid fa-hand-holding-medical"></i>
+                            <p>Search for a hospital or specialist to see real-time availability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Prescription AI -->
+        <section id="prescription" class="hidden-section">
+            <header class="section-header">
+                <h1>Smart <span>Prescription</span> Analyzer</h1>
+                <p>Upload your prescription and let AI explain the medicines and dosages.</p>
+            </header>
+            
+            <div class="prescription-layout">
+                <div class="upload-container glass-panel" id="drop-zone">
+                    <input type="file" id="file-input" hidden accept="image/*">
+                    <div class="upload-content">
+                        <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+                        <h3>Drag & Drop your prescription here</h3>
+                        <p>or click to browse files (Images only)</p>
+                    </div>
+                    <button class="btn-secondary" onclick="document.getElementById('file-input').click()">Browse Files</button>
+                </div>
+                
+                <div class="analysis-results glass-panel hidden" id="analysis-results">
+                    <div class="loader-container hidden" id="analysis-loader">
+                        <div class="spinner"></div>
+                        <p>AI is analyzing your prescription...</p>
+                    </div>
+                    <div id="analysis-content">
+                        <h3><i class="fa-solid fa-file-prescription"></i> Extracted Info</h3>
+                        
+                        <div class="disease-summary" id="disease-summary">
+                            <!-- Dynamic -->
+                        </div>
+
+                        <div class="medicines-list" id="medicines-list">
+                            <!-- Dynamic -->
+                        </div>
+                        <div class="warnings-box" id="warnings-box">
+                            <h4><i class="fa-solid fa-triangle-exclamation"></i> Warnings & Advice</h4>
+                            <ul id="warnings-list">
+                                <!-- Dynamic -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
