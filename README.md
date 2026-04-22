@@ -1,4 +1,4 @@
-# MediRoute — Emergency Medical Navigation Platform
+# Medicare.AI — Emergency Medical Navigation Platform
 
 Patients in medical emergencies waste critical time because no platform tells them *which nearby hospital has their required specialist available right now*. MediRoute solves this by intelligently routing users to the right doctor, at the right hospital, at the right time.
 
