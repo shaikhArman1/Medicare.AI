@@ -167,3 +167,5 @@ mediroute/
 <!-- commit-log: 2026-04-20T10:57:14 - fix: resolve CORS issue between frontend and backend -->
 
 <!-- commit-log: 2026-04-20T13:05:15 - feat: add retry logic on failed API calls -->
+
+<!-- commit-log: 2026-04-24T14:51:01 - feat: add loading state for API-dependent components -->
