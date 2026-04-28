@@ -199,8 +199,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Module 3: Prescription AI ---
     const dropZone = document.getElementById('drop-zone');
     const fileInput = document.getElementById('file-input');
+    const uploadContent = document.getElementById('upload-content');
+    const analyzingContent = document.getElementById('analyzing-content');
     const analysisResults = document.getElementById('analysis-results');
-    const loader = document.getElementById('analysis-loader');
     const content = document.getElementById('analysis-content');
     
     // Drag & Drop
@@ -224,9 +225,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     async function handleFileUpload(file) {
-        analysisResults.classList.remove('hidden');
-        loader.classList.remove('hidden');
-        content.classList.add('hidden');
+        // Switch to analyzing state
+        uploadContent.classList.add('hidden');
+        analyzingContent.classList.remove('hidden');
+        analysisResults.classList.add('hidden');
+        dropZone.classList.add('analyzing');
+        dropZone.classList.remove('has-results');
 
         const formData = new FormData();
         formData.append('file', file);
@@ -242,14 +246,22 @@ document.addEventListener('DOMContentLoaded', () => {
             if(data.error) throw new Error(data.error);
             
             renderPrescriptionData(data);
+
+            // Switch to results state
+            analyzingContent.classList.add('hidden');
+            analysisResults.classList.remove('hidden');
+            dropZone.classList.remove('analyzing');
+            dropZone.classList.add('has-results');
             
         } catch (err) {
             console.error(err);
             alert("Error analyzing prescription: " + err.message);
-            analysisResults.classList.add('hidden');
+            // Reset back to upload state
+            analyzingContent.classList.add('hidden');
+            uploadContent.classList.remove('hidden');
+            dropZone.classList.remove('analyzing');
+            dropZone.classList.remove('has-results');
         } finally {
-            loader.classList.add('hidden');
-            content.classList.remove('hidden');
             fileInput.value = ''; // reset
         }
     }
