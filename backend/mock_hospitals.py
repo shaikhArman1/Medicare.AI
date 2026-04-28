@@ -18,40 +18,6 @@ mock_hospitals = [
         }
     },
     {
-        "id": "h18",
-        "name": "Kolkata Port Trust Hospital",
-        "address": "New Alipore, Kolkata",
-        "lat": 22.518,
-        "lon": 88.318,
-        "reception_number": "+91-033-2401-4503",
-        "specialists": {
-            "Cardiologist": [
-                {"name": "Dr. Jaideep Das Gupta", "experience": "Interventional Cardiologist", "rating": 4.5, "fee": 800, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Orthopaedic": [
-                {"name": "General Orthopaedic Specialist", "experience": "Hospital Department", "rating": 4.2, "fee": 500, "available_now": True, "next_available_in_hours": 1}
-            ],
-            "Ophthalmologist": [
-                {"name": "Eye Specialist Team", "experience": "Hospital Unit", "rating": 4.0, "fee": 400, "available_now": False, "next_available_in_hours": 2}
-            ],
-            "ENT Specialist": [
-                {"name": "ENT Department", "experience": "Hospital Unit", "rating": 4.1, "fee": 400, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Dermatologist": [
-                {"name": "Skin Specialist", "experience": "Hospital Unit", "rating": 4.0, "fee": 450, "available_now": False, "next_available_in_hours": 3}
-            ],
-            "General Physician": [
-                {"name": "General Medicine Doctor", "experience": "Hospital Staff", "rating": 4.3, "fee": 300, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Pediatrician": [
-                {"name": "Child Specialist", "experience": "Hospital Staff", "rating": 4.2, "fee": 350, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "General Surgeon": [
-                {"name": "Surgery Department", "experience": "Spine & Plastic Surgery", "rating": 4.4, "fee": 700, "available_now": False, "next_available_in_hours": 4}
-            ]
-        }
-    },
-    {
         "id": "h19",
         "name": "B.P. Poddar Hospital",
         "address": "New Alipore, Kolkata",
@@ -105,41 +71,7 @@ mock_hospitals = [
             ]
         }
     },
-    {
-        "id": "h20",
-        "name": "Vidyasagar State General Hospital",
-        "address": "Behala, Kolkata",
-        "lat": 22.4987,
-        "lon": 88.3155,
-        "reception_number": ["+91-033-2397-1591", "+91-090073-55352"],
-        "specialists": {
-            "General Physician": [
-                {"name": "Dr. Somnath Ghosh", "experience": "General Medicine", "rating": 4.2, "fee": 300, "available_now": True, "next_available_in_hours": 0},
-                {"name": "Dr. Bijoy Guha Roy", "experience": "General Medicine", "rating": 4.1, "fee": 300, "available_now": False, "next_available_in_hours": 2},
-                {"name": "Dr. Bijali Majumdar", "experience": "General Medicine", "rating": 4.0, "fee": 300, "available_now": True, "next_available_in_hours": 1},
-                {"name": "Dr. Arunabha Saha", "experience": "General Medicine", "rating": 4.1, "fee": 300, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Gynecologist": [
-                {"name": "Dr. Archita Biswas", "experience": "Obstetrics & Gynaecology", "rating": 4.3, "fee": 350, "available_now": True, "next_available_in_hours": 0},
-                {"name": "Dr. Saswati Naskar", "experience": "Gynaecology", "rating": 4.2, "fee": 350, "available_now": False, "next_available_in_hours": 2}
-            ],
-            "Dentist": [
-                {"name": "Dr. Srija Sanyal", "experience": "Dental Surgery", "rating": 4.2, "fee": 200, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "General Surgeon": [
-                {"name": "Dr. Diptendu Bikas Sengupta", "experience": "General Surgery", "rating": 4.4, "fee": 400, "available_now": False, "next_available_in_hours": 3}
-            ],
-            "Dermatologist": [
-                {"name": "Dr. Sneharanjan Bhattacharyya", "experience": "Dermatology", "rating": 4.1, "fee": 300, "available_now": True, "next_available_in_hours": 1}
-            ],
-            "Radiologist": [
-                {"name": "Dr. Arun Ghosal", "experience": "Radiology", "rating": 4.0, "fee": 300, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Anesthesiologist": [
-                {"name": "Dr. Subal Bag", "experience": "Anesthesiology", "rating": 4.1, "fee": 300, "available_now": False, "next_available_in_hours": 2}
-            ]
-        }
-    },
+    
     {
         "id": "h21",
         "name": "RSV Hospital",
@@ -367,27 +299,7 @@ mock_hospitals = [
             ]
         }
     },
-    {
-        "id": "h26",
-        "name": "Tarangini Nursing Home",
-        "address": "Behala, Kolkata",
-        "lat": 22.4968,
-        "lon": 88.3172,
-        "reception_number": "+91-093307-07401",
-        "specialists": {
-            "General Physician": [
-                {
-                    "name": "Dr. Nazrul Islam",
-                    "experience": "31+ years",
-                    "rating": 4.6,
-                    "fee": 400,
-                    "available_now": True,
-                    "next_available_in_hours": 0,
-                    "special_focus": ["Piles", "Fistula", "Fissure", "Ayurvedic Treatment"]
-                }
-            ]
-        }
-    },
+    
     {
         "id": "h27",
         "name": "BM Birla Heart Research Centre",
@@ -400,23 +312,6 @@ mock_hospitals = [
                 {"name": "Dr. R S Agarwal", "experience": "Cardiology", "rating": 4.6, "fee": 800, "available_now": True, "next_available_in_hours": 0},
                 {"name": "Dr. Abhijit Aich Bhowmick", "experience": "Cardiology", "rating": 4.4, "fee": 750, "available_now": True, "next_available_in_hours": 0},
                 {"name": "Dr. Santanu Dutta", "experience": "Cardiology", "rating": 4.3, "fee": 700, "available_now": False, "next_available_in_hours": 2}
-            ]
-        }
-    },
-    {
-        "id": "h28",
-        "name": "DM Hospitals Private Limited",
-        "address": "Thakurpukur, Kolkata",
-        "lat": 22.47,
-        "lon": 88.31,
-        "reception_number": ["+91-098367-29186", "+91-033-2453-6222"],
-        "specialists": {
-            "General Physician": [
-                {"name": "Dr. Satyaki Basu", "experience": "Medicine", "rating": 4.5, "fee": 500, "available_now": True, "next_available_in_hours": 0},
-                {"name": "Dr. M K Chaudhuri", "experience": "Internal Medicine", "rating": 4.2, "fee": 500, "available_now": False, "next_available_in_hours": 2},
-                {"name": "Dr. Buddhadev Roy", "experience": "Internal Medicine", "rating": 4.1, "fee": 450, "available_now": True, "next_available_in_hours": 1},
-                {"name": "Dr. Neha Karnani Agarwal", "experience": "Medicine", "rating": 4.3, "fee": 500, "available_now": False, "next_available_in_hours": 3},
-                {"name": "Dr. Puspita Mondal", "experience": "Medicine", "rating": 4.0, "fee": 450, "available_now": True, "next_available_in_hours": 0}
             ]
         }
     },
@@ -436,35 +331,7 @@ mock_hospitals = [
             ]
         }
     },
-    {
-        "id": "h30",
-        "name": "Command Hospital (Eastern Command)",
-        "address": "Alipore, Kolkata",
-        "lat": 22.5304,
-        "lon": 88.3317,
-        "reception_number": "+91-033-2479-1567",
-        "specialists": {
-            "Dermatologist": [
-                {"name": "Dr. Manas Chatterjee", "experience": "20+ years", "rating": 4.6, "fee": 500, "available_now": False, "next_available_in_hours": 3}
-            ],
-            "General Physician": [
-                {"name": "Dr. Amit Das", "experience": "15+ years", "rating": 4.4, "fee": 400, "available_now": True, "next_available_in_hours": 0}
-            ]
-        }
-    },
-    {
-        "id": "h31",
-        "name": "Tapan Sinha Memorial Hospital",
-        "address": "Tollygunge, Kolkata",
-        "lat": 22.49,
-        "lon": 88.34,
-        "reception_number": "+91-033-2255-4473",
-        "specialists": {
-            "General Physician": [
-                {"name": "General Physician", "experience": "Hospital Staff", "rating": 4.0, "fee": 300, "available_now": True, "next_available_in_hours": 0}
-            ]
-        }
-    },
+
 
     # ─── CHINAR PARK / NEW TOWN AREA (3 Hospitals) ───
 
@@ -541,8 +408,8 @@ mock_hospitals = [
         "id": "h34",
         "name": "Charnock Hospital",
         "address": "Chinar Park, New Town, Rajarhat, Kolkata",
-        "lat": 22.5842,
-        "lon": 88.4593,
+        "lat": 22.6260,
+        "lon": 88.4354,
         "reception_number": ["+91-033-4040-5000", "+91-098300-54321"],
         "specialists": {
             "Cardiologist": [
@@ -687,74 +554,6 @@ mock_hospitals = [
         }
     },
     {
-        "id": "h38",
-        "name": "RN Tagore International Institute of Cardiac Sciences",
-        "address": "124 Mukundapur, EM Bypass, Kolkata",
-        "lat": 22.5010,
-        "lon": 88.3930,
-        "reception_number": ["+91-033-6656-4444", "+91-1800-103-4444"],
-        "specialists": {
-            "Cardiologist": [
-                {"name": "Dr. Sankar Das Mahapatra", "experience": "35+ years", "rating": 4.9, "fee": 2000, "available_now": True, "next_available_in_hours": 0},
-                {"name": "Dr. D P Sinha", "experience": "28+ years", "rating": 4.7, "fee": 1500, "available_now": False, "next_available_in_hours": 2},
-                {"name": "Dr. Arindam Basu Mallik", "experience": "20+ years", "rating": 4.5, "fee": 1200, "available_now": True, "next_available_in_hours": 1}
-            ],
-            "Neurologist": [
-                {"name": "Dr. Biman Kanti Ray", "experience": "26+ years", "rating": 4.7, "fee": 1400, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Nephrologist": [
-                {"name": "Dr. Sanjay K Agarwal", "experience": "24+ years", "rating": 4.6, "fee": 1300, "available_now": False, "next_available_in_hours": 3}
-            ],
-            "General Physician": [
-                {"name": "Dr. Barun Kanti Ghosh", "experience": "30+ years", "rating": 4.7, "fee": 900, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Orthopaedic": [
-                {"name": "Dr. Sanjib Kumar Saha", "experience": "22+ years", "rating": 4.6, "fee": 1200, "available_now": True, "next_available_in_hours": 1}
-            ],
-            "Pulmonologist": [
-                {"name": "Dr. Arunava Dey", "experience": "18+ years", "rating": 4.5, "fee": 1100, "available_now": False, "next_available_in_hours": 2}
-            ]
-        }
-    },
-    {
-        "id": "h39",
-        "name": "Medica Superspecialty Hospital",
-        "address": "127 Mukundapur, EM Bypass, Kolkata",
-        "lat": 22.5003,
-        "lon": 88.3955,
-        "reception_number": ["+91-033-6652-0000", "+91-1800-700-6969"],
-        "specialists": {
-            "Cardiologist": [
-                {"name": "Dr. Anjan Siotia", "experience": "28+ years", "rating": 4.7, "fee": 1500, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Neurologist": [
-                {"name": "Dr. Jaidip Ray Chaudhuri", "experience": "22+ years", "rating": 4.6, "fee": 1200, "available_now": True, "next_available_in_hours": 1}
-            ],
-            "Gastroenterologist": [
-                {"name": "Dr. Sukanta Ray", "experience": "20+ years", "rating": 4.6, "fee": 1200, "available_now": False, "next_available_in_hours": 2}
-            ],
-            "Orthopaedic": [
-                {"name": "Dr. Anirban Chatterjee", "experience": "18+ years", "rating": 4.5, "fee": 1100, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Oncologist": [
-                {"name": "Dr. Sourav Datta", "experience": "16+ years", "rating": 4.5, "fee": 1500, "available_now": False, "next_available_in_hours": 3},
-                {"name": "Dr. Subir Ganguly", "experience": "24+ years", "rating": 4.7, "fee": 1800, "available_now": True, "next_available_in_hours": 1}
-            ],
-            "General Surgeon": [
-                {"name": "Dr. Pallab Saha", "experience": "22+ years", "rating": 4.6, "fee": 1200, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Gynecologist": [
-                {"name": "Dr. Sankar Das Mahapatra", "experience": "18+ years", "rating": 4.5, "fee": 1000, "available_now": False, "next_available_in_hours": 2}
-            ],
-            "General Physician": [
-                {"name": "Dr. N N Law", "experience": "35+ years", "rating": 4.8, "fee": 1000, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Dermatologist": [
-                {"name": "Dr. Debatosh Das", "experience": "14+ years", "rating": 4.4, "fee": 800, "available_now": True, "next_available_in_hours": 1}
-            ]
-        }
-    },
-    {
         "id": "h40",
         "name": "Ruby General Hospital",
         "address": "576 Anandapur, EM Bypass, Kasba, Kolkata",
@@ -821,38 +620,6 @@ mock_hospitals = [
             ],
             "Psychiatrist": [
                 {"name": "Dr. Jay Ranjan Ram", "experience": "20+ years", "rating": 4.6, "fee": 1000, "available_now": True, "next_available_in_hours": 0}
-            ]
-        }
-    },
-    {
-        "id": "h42",
-        "name": "Calcutta Medical Research Institute (CMRI)",
-        "address": "7/2 Diamond Harbour Road, Alipore, Kolkata",
-        "lat": 22.5264,
-        "lon": 88.3343,
-        "reception_number": ["+91-033-2456-7890", "+91-033-2456-7891"],
-        "specialists": {
-            "Cardiologist": [
-                {"name": "Dr. Prashant Jha", "experience": "20+ years", "rating": 4.6, "fee": 1200, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "Neurologist": [
-                {"name": "Dr. Gautam Ganguly", "experience": "28+ years", "rating": 4.7, "fee": 1400, "available_now": False, "next_available_in_hours": 2}
-            ],
-            "Orthopaedic": [
-                {"name": "Dr. Tamal Das Gupta", "experience": "22+ years", "rating": 4.6, "fee": 1100, "available_now": True, "next_available_in_hours": 1}
-            ],
-            "Gastroenterologist": [
-                {"name": "Dr. Sujit Chowdhury", "experience": "18+ years", "rating": 4.5, "fee": 1200, "available_now": True, "next_available_in_hours": 0}
-            ],
-            "General Physician": [
-                {"name": "Dr. Avik Karak", "experience": "15+ years", "rating": 4.4, "fee": 700, "available_now": True, "next_available_in_hours": 0},
-                {"name": "Dr. Sanchita Roy", "experience": "12+ years", "rating": 4.3, "fee": 600, "available_now": False, "next_available_in_hours": 2}
-            ],
-            "Gynecologist": [
-                {"name": "Dr. Arundhati Dhar", "experience": "24+ years", "rating": 4.7, "fee": 1200, "available_now": True, "next_available_in_hours": 1}
-            ],
-            "Urologist": [
-                {"name": "Dr. Anup Kumar", "experience": "26+ years", "rating": 4.7, "fee": 1400, "available_now": False, "next_available_in_hours": 3}
             ]
         }
     },
