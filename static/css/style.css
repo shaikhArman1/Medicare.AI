@@ -495,8 +495,8 @@ input[type="text"]:focus {
 
 /* Prescription Upload AI */
 .prescription-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -505,13 +505,41 @@ input[type="text"]:focus {
     background: rgba(255, 255, 255, 0.6);
     text-align: center;
     padding: 4rem 2rem;
-    transition: border-color 0.3s, background 0.3s;
+    transition: border-color 0.4s ease, background 0.4s ease, max-width 0.5s ease, padding 0.4s ease;
+    width: 100%;
+    max-width: 500px;
 }
 
 .upload-container:hover,
 .upload-container.dragover {
     border-color: var(--accent-primary);
     background: rgba(255, 255, 255, 0.9);
+}
+
+/* State: Analyzing */
+.upload-container.analyzing {
+    border-style: solid;
+    border-color: var(--accent-primary);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 4rem 2rem;
+    cursor: default;
+    animation: analyzePulse 2s ease-in-out infinite;
+}
+
+@keyframes analyzePulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(2, 132, 199, 0.1); }
+    50% { box-shadow: 0 0 20px 4px rgba(2, 132, 199, 0.15); }
+}
+
+/* State: Results loaded */
+.upload-container.has-results {
+    border-style: solid;
+    border-color: var(--glass-border);
+    background: rgba(255, 255, 255, 0.85);
+    max-width: 700px;
+    padding: 2rem;
+    text-align: left;
+    animation: none;
 }
 
 .upload-icon {
@@ -522,7 +550,7 @@ input[type="text"]:focus {
 }
 
 .analysis-results {
-    padding: 2rem;
+    padding: 0;
     position: relative;
 }
 
@@ -612,10 +640,13 @@ input[type="text"]:focus {
 /* Responsive */
 @media (max-width: 900px) {
 
-    .discovery-layout,
-    .prescription-layout {
+    .discovery-layout {
         grid-template-columns: 1fr;
         height: auto;
+    }
+
+    .prescription-layout {
+        padding: 0 1rem;
     }
 
     #map {

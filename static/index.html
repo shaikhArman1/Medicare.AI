@@ -89,34 +89,39 @@
             <div class="prescription-layout">
                 <div class="upload-container glass-panel" id="drop-zone">
                     <input type="file" id="file-input" hidden accept="image/*">
-                    <div class="upload-content">
+                    
+                    <!-- Upload State -->
+                    <div class="upload-content" id="upload-content">
                         <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
                         <h3>Drag & Drop your prescription here</h3>
                         <p>or click to browse files (Images only)</p>
+                        <button class="btn-secondary" style="margin-top: 1rem;" onclick="document.getElementById('file-input').click()">Browse Files</button>
                     </div>
-                    <button class="btn-secondary" onclick="document.getElementById('file-input').click()">Browse Files</button>
-                </div>
-                
-                <div class="analysis-results glass-panel hidden" id="analysis-results">
-                    <div class="loader-container hidden" id="analysis-loader">
+
+                    <!-- Analyzing State -->
+                    <div class="upload-content hidden" id="analyzing-content">
                         <div class="spinner"></div>
                         <p>AI is analyzing your prescription...</p>
                     </div>
-                    <div id="analysis-content">
-                        <h3><i class="fa-solid fa-file-prescription"></i> Extracted Info</h3>
-                        
-                        <div class="disease-summary" id="disease-summary">
-                            <!-- Dynamic -->
-                        </div>
 
-                        <div class="medicines-list" id="medicines-list">
-                            <!-- Dynamic -->
-                        </div>
-                        <div class="warnings-box" id="warnings-box">
-                            <h4><i class="fa-solid fa-triangle-exclamation"></i> Warnings & Advice</h4>
-                            <ul id="warnings-list">
+                    <!-- Results State (inside same card) -->
+                    <div class="analysis-results hidden" id="analysis-results">
+                        <div id="analysis-content">
+                            <h3><i class="fa-solid fa-file-prescription"></i> Extracted Info</h3>
+                            
+                            <div class="disease-summary" id="disease-summary">
                                 <!-- Dynamic -->
-                            </ul>
+                            </div>
+
+                            <div class="medicines-list" id="medicines-list">
+                                <!-- Dynamic -->
+                            </div>
+                            <div class="warnings-box" id="warnings-box">
+                                <h4><i class="fa-solid fa-triangle-exclamation"></i> Warnings & Advice</h4>
+                                <ul id="warnings-list">
+                                    <!-- Dynamic -->
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
