@@ -1,7 +1,7 @@
 // Configure this to your deployed backend URL (Render/Railway)
 const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? ''  // Use relative URLs for local development
-    : 'https://your-backend-url.onrender.com';  // ← Replace with your actual deployed backend URL
+    : 'https://medicare-backend-lp9r.onrender.com';  // Updated with your Render URL
 
 document.addEventListener('DOMContentLoaded', () => {
     // Basic Navigation
