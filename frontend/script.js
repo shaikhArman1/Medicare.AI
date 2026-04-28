@@ -1,3 +1,8 @@
+// Configure this to your deployed backend URL (Render/Railway)
+const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? ''  // Use relative URLs for local development
+    : 'https://your-backend-url.onrender.com';  // ← Replace with your actual deployed backend URL
+
 document.addEventListener('DOMContentLoaded', () => {
     // Basic Navigation
     const navLinks = document.querySelectorAll('.nav-links a');
@@ -97,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hospitalList.innerHTML = `<div class="empty-state"><div class="spinner" style="margin:0 auto;"></div><p>Searching for ${specialty || 'hospitals'}...</p></div>`;
         
         try {
-            const res = await fetch(`/api/hospitals?lat=${userLocation.lat}&lon=${userLocation.lon}&specialty=${encodeURIComponent(specialty)}`);
+            const res = await fetch(`${API_BASE_URL}/api/hospitals?lat=${userLocation.lat}&lon=${userLocation.lon}&specialty=${encodeURIComponent(specialty)}`);
             const data = await res.json();
             renderHospitals(data, specialty);
         } catch(error) {
@@ -236,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formData.append('file', file);
 
         try {
-            const res = await fetch('/api/analyze-prescription', {
+            const res = await fetch(`${API_BASE_URL}/api/analyze-prescription`, {
                 method: 'POST',
                 body: formData
             });

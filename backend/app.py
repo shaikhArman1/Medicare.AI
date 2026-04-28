@@ -1,16 +1,18 @@
 import os
 import math
 import google.generativeai as genai
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 from werkzeug.utils import secure_filename
 from dotenv import load_dotenv
 
 # Load mock data
-from data.mock_hospitals import mock_hospitals
+from mock_hospitals import mock_hospitals
 
 load_dotenv()
 
-app = Flask(__name__, static_folder='static', static_url_path='')
+app = Flask(__name__)
+CORS(app)  # Allow cross-origin requests from Vercel frontend
 
 # Configure Gemini
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -33,7 +35,7 @@ def haversine_distance(lat1, lon1, lat2, lon2):
 
 @app.route('/')
 def index():
-    return send_from_directory('static', 'index.html')
+    return jsonify({"status": "ok", "message": "Medicare.ai API is running"})
 
 @app.route('/api/hospitals', methods=['GET'])
 def get_hospitals():
