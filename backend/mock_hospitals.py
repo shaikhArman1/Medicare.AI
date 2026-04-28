@@ -3,8 +3,8 @@ mock_hospitals = [
         "id": "h17",
         "name": "Narayana Memorial Hospital",
         "address": "Behala, Kolkata",
-        "lat": 22.4956,
-        "lon": 88.3169,
+        "lat": 22.4862,
+        "lon": 88.3146,
         "reception_number": ["+91-033-6640-0000", "+91-7383086144"],
         "specialists": {
             "Cardiologist": [
@@ -22,7 +22,7 @@ mock_hospitals = [
         "name": "B.P. Poddar Hospital",
         "address": "New Alipore, Kolkata",
         "lat": 22.5118,
-        "lon": 88.3322,
+        "lon": 88.3324,
         "reception_number": "+91-085850-35846",
         "specialists": {
             "General Physician": [
@@ -76,8 +76,8 @@ mock_hospitals = [
         "id": "h21",
         "name": "RSV Hospital",
         "address": "Tollygunge, Kolkata",
-        "lat": 22.5033,
-        "lon": 88.3421,
+        "lat": 22.5031,
+        "lon": 88.3447,
         "reception_number": ["+91-033-4081-8000", "+91-033-3001-3000", "+91-099039-99659", "+91-099039-99660"],
         "specialists": {
             "Gynecologist": [
@@ -126,8 +126,8 @@ mock_hospitals = [
         "id": "h22",
         "name": "Behala Balananda Brahmachari Hospital",
         "address": "Behala, Kolkata",
-        "lat": 22.51,
-        "lon": 88.32,
+        "lat": 22.4842,
+        "lon": 88.3129,
         "reception_number": "+91-62922672432",
         "specialists": {
             "General Surgeon": [
@@ -171,8 +171,8 @@ mock_hospitals = [
         "id": "h23",
         "name": "Apex Clinic Private Limited",
         "address": "Behala, Kolkata",
-        "lat": 22.486,
-        "lon": 88.303,
+        "lat": 22.4765,
+        "lon": 88.3135,
         "reception_number": ["+91-033-2406-8071", "+91-033-2570-2257"],
         "specialists": {
             "Urologist": [
@@ -203,8 +203,8 @@ mock_hospitals = [
         "id": "h24",
         "name": "UMRI Hospital",
         "address": "Barisha, Kolkata",
-        "lat": 22.4782,
-        "lon": 88.3129,
+        "lat": 22.4795,
+        "lon": 88.3075,
         "reception_number": "+91-090736-99003",
         "specialists": {
             "General Surgeon": [
@@ -246,8 +246,8 @@ mock_hospitals = [
         "id": "h25",
         "name": "Kasturi Das Memorial Super Speciality Hospital",
         "address": "Maheshtala, Kolkata",
-        "lat": 22.52,
-        "lon": 88.27,
+        "lat": 22.4862,
+        "lon": 88.2435,
         "reception_number": "+91-033-7120-0000",
         "specialists": {
             "Cardiologist": [
@@ -304,8 +304,8 @@ mock_hospitals = [
         "id": "h27",
         "name": "BM Birla Heart Research Centre",
         "address": "Alipore, Kolkata",
-        "lat": 22.5328,
-        "lon": 88.3282,
+        "lat": 22.5273,
+        "lon": 88.3323,
         "reception_number": ["+91-080-6213-6586", "+91-080-6213-6585"],
         "specialists": {
             "Cardiologist": [
@@ -319,8 +319,8 @@ mock_hospitals = [
         "id": "h29",
         "name": "Manipal Hospitals Dhakuria",
         "address": "Dhakuria, Kolkata",
-        "lat": 22.4988,
-        "lon": 88.3758,
+        "lat": 22.5055,
+        "lon": 88.3755,
         "reception_number": "+91-033-6907-0000",
         "specialists": {
             "ENT Specialist": [
@@ -339,8 +339,8 @@ mock_hospitals = [
         "id": "h32",
         "name": "AMRI Hospitals - Salt Lake",
         "address": "Block A, Salt Lake City, Near Chinar Park, Kolkata",
-        "lat": 22.5863,
-        "lon": 88.4132,
+        "lat": 22.5857,
+        "lon": 88.4116,
         "reception_number": ["+91-033-6606-3800", "+91-033-6606-3801"],
         "specialists": {
             "Cardiologist": [
@@ -377,8 +377,8 @@ mock_hospitals = [
         "id": "h33",
         "name": "Tata Medical Center",
         "address": "14 Major Arterial Road, New Town, Near Chinar Park, Kolkata",
-        "lat": 22.5920,
-        "lon": 88.4678,
+        "lat": 22.5761,
+        "lon": 88.4731,
         "reception_number": ["+91-033-6605-7000", "+91-033-6605-7011"],
         "specialists": {
             "Oncologist": [
@@ -408,8 +408,8 @@ mock_hospitals = [
         "id": "h34",
         "name": "Charnock Hospital",
         "address": "Chinar Park, New Town, Rajarhat, Kolkata",
-        "lat": 22.6260,
-        "lon": 88.4354,
+        "lat": 22.6352,
+        "lon": 88.4334,
         "reception_number": ["+91-033-4040-5000", "+91-098300-54321"],
         "specialists": {
             "Cardiologist": [
@@ -447,8 +447,8 @@ mock_hospitals = [
         "id": "h35",
         "name": "Apollo Gleneagles Hospital",
         "address": "58 Canal Circular Road, Kadapara, Phool Bagan, Kolkata",
-        "lat": 22.5726,
-        "lon": 88.3990,
+        "lat": 22.5748,
+        "lon": 88.4016,
         "reception_number": ["+91-033-2320-3040", "+91-033-2320-2122"],
         "specialists": {
             "Cardiologist": [
@@ -486,8 +486,8 @@ mock_hospitals = [
         "id": "h36",
         "name": "SSKM Hospital (PG Hospital)",
         "address": "244 AJC Bose Road, Bhowanipore, Kolkata",
-        "lat": 22.5371,
-        "lon": 88.3430,
+        "lat": 22.5390,
+        "lon": 88.3409,
         "reception_number": ["+91-033-2223-4567", "+91-033-2223-5678"],
         "specialists": {
             "General Physician": [
@@ -522,8 +522,8 @@ mock_hospitals = [
         "id": "h37",
         "name": "Fortis Hospital Anandapur",
         "address": "730 EM Bypass, Anandapur, Kolkata",
-        "lat": 22.5110,
-        "lon": 88.3970,
+        "lat": 22.5173,
+        "lon": 88.4036,
         "reception_number": ["+91-033-6628-4444", "+91-033-6628-4445"],
         "specialists": {
             "Cardiologist": [
@@ -557,8 +557,8 @@ mock_hospitals = [
         "id": "h40",
         "name": "Ruby General Hospital",
         "address": "576 Anandapur, EM Bypass, Kasba, Kolkata",
-        "lat": 22.5180,
-        "lon": 88.3920,
+        "lat": 22.5135,
+        "lon": 88.4031,
         "reception_number": ["+91-033-6609-4444", "+91-033-6609-4445"],
         "specialists": {
             "Cardiologist": [
@@ -592,8 +592,8 @@ mock_hospitals = [
         "id": "h41",
         "name": "Peerless Hospital & B.K. Roy Research Centre",
         "address": "360 Panchasayar, Gariahat, Kolkata",
-        "lat": 22.5020,
-        "lon": 88.3690,
+        "lat": 22.4849,
+        "lon": 88.4013,
         "reception_number": ["+91-033-4011-2222", "+91-033-4011-2200"],
         "specialists": {
             "Cardiologist": [
@@ -627,8 +627,8 @@ mock_hospitals = [
         "id": "h43",
         "name": "Woodland Hospital",
         "address": "8/5 Alipore Road, Alipore, Kolkata",
-        "lat": 22.5340,
-        "lon": 88.3370,
+        "lat": 22.5345,
+        "lon": 88.3340,
         "reception_number": ["+91-033-4050-7070", "+91-033-4050-7071"],
         "specialists": {
             "General Physician": [
@@ -656,8 +656,8 @@ mock_hospitals = [
         "id": "h44",
         "name": "Narayana Superspecialty Hospital",
         "address": "120/1 Andul Road, Howrah, Kolkata",
-        "lat": 22.5760,
-        "lon": 88.2920,
+        "lat": 22.5625,
+        "lon": 88.3081,
         "reception_number": ["+91-033-7122-0000", "+91-1800-102-6000"],
         "specialists": {
             "Cardiologist": [
@@ -691,8 +691,8 @@ mock_hospitals = [
         "id": "h45",
         "name": "Belle Vue Clinic",
         "address": "9 Dr. U. N. Brahmachari Street, Ballygunge, Kolkata",
-        "lat": 22.5380,
-        "lon": 88.3580,
+        "lat": 22.5425,
+        "lon": 88.3549,
         "reception_number": ["+91-033-4039-8888", "+91-033-4039-8889"],
         "specialists": {
             "General Physician": [
@@ -723,8 +723,8 @@ mock_hospitals = [
         "id": "h46",
         "name": "Institute of Neurosciences Kolkata",
         "address": "185/1 AJC Bose Road, Park Circus, Kolkata",
-        "lat": 22.5420,
-        "lon": 88.3610,
+        "lat": 22.5407,
+        "lon": 88.3533,
         "reception_number": ["+91-033-4020-6363", "+91-033-4020-6364"],
         "specialists": {
             "Neurologist": [
