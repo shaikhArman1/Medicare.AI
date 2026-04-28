@@ -49,19 +49,31 @@ def get_hospitals():
     results = []
     
     for hospital in mock_hospitals:
-        # Check if they have the specialty
-        if specialty and specialty not in hospital['specialists']:
-            continue
+        # Improved search: check for case-insensitive partial matches
+        matching_key = None
+        if specialty:
+            for key in hospital['specialists'].keys():
+                if specialty.lower() in key.lower() or key.lower() in specialty.lower():
+                    matching_key = key
+                    break
+            
+            if not matching_key:
+                continue
             
         distance = haversine_distance(user_lat, user_lon, hospital['lat'], hospital['lon'])
         
         # Determine availability
-        if specialty:
-            avail = hospital['specialists'][specialty]
-            available_now = avail['available_now']
-            next_available = avail['next_available_in_hours']
+        if matching_key:
+            specialists_list = hospital['specialists'][matching_key]
+            # Use 'any' to check if at least one specialist of this type is available
+            available_now = any(s.get('available_now', False) for s in specialists_list)
+            # Shortest wait time if none are available now
+            if available_now:
+                next_available = 0
+            else:
+                next_available = min((s.get('next_available_in_hours', 0) for s in specialists_list), default=0)
         else:
-            # If no specialty provided, just list them
+            # If no specialty provided, just list the hospital
             available_now = True
             next_available = 0
             
