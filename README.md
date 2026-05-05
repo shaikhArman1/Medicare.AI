@@ -169,3 +169,5 @@ mediroute/
 <!-- commit-log: 2026-04-20T13:05:15 - feat: add retry logic on failed API calls -->
 
 <!-- commit-log: 2026-04-24T14:51:01 - feat: add loading state for API-dependent components -->
+
+<!-- commit-log: 2026-05-05T09:38:07 - fix: resolve datetime serialization in JSON -->
