@@ -1,16 +1,18 @@
 import os
 import math
 import google.generativeai as genai
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 from werkzeug.utils import secure_filename
 from dotenv import load_dotenv
 
 # Load mock data
-from data.mock_hospitals import mock_hospitals
+from mock_hospitals import mock_hospitals
 
 load_dotenv()
 
-app = Flask(__name__, static_folder='static', static_url_path='')
+app = Flask(__name__)
+CORS(app)  # Allow cross-origin requests from Vercel frontend
 
 # Configure Gemini
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -33,53 +35,70 @@ def haversine_distance(lat1, lon1, lat2, lon2):
 
 @app.route('/')
 def index():
-    return send_from_directory('static', 'index.html')
+    return jsonify({"status": "ok", "message": "Medicare.ai API is running"})
 
 @app.route('/api/hospitals', methods=['GET'])
 def get_hospitals():
-    user_lat = request.args.get('lat', type=float)
-    user_lon = request.args.get('lon', type=float)
-    specialty = request.args.get('specialty', default='', type=str).strip().title()
+    try:
+        user_lat = request.args.get('lat', type=float)
+        user_lon = request.args.get('lon', type=float)
+        specialty = request.args.get('specialty', default='', type=str).strip().title()
 
-    if not user_lat or not user_lon:
-        return jsonify({"error": "Latitude and longitude are required"}), 400
+        if not user_lat or not user_lon:
+            return jsonify({"error": "Latitude and longitude are required"}), 400
 
-    results = []
-    
-    for hospital in mock_hospitals:
-        # Check if they have the specialty
-        if specialty and specialty not in hospital['specialists']:
-            continue
-            
-        distance = haversine_distance(user_lat, user_lon, hospital['lat'], hospital['lon'])
+        results = []
         
-        # Determine availability
-        if specialty:
-            avail = hospital['specialists'][specialty]
-            available_now = avail['available_now']
-            next_available = avail['next_available_in_hours']
-        else:
-            # If no specialty provided, just list them
-            available_now = True
-            next_available = 0
+        for hospital in mock_hospitals:
+            # Improved search: check for case-insensitive partial matches
+            matching_key = None
+            if specialty:
+                for key in hospital['specialists'].keys():
+                    if specialty.lower() in key.lower() or key.lower() in specialty.lower():
+                        matching_key = key
+                        break
+                
+                if not matching_key:
+                    continue
+                
+            distance = haversine_distance(user_lat, user_lon, hospital['lat'], hospital['lon'])
             
-        hospital_data = {
-            "id": hospital["id"],
-            "name": hospital["name"],
-            "address": hospital["address"],
-            "reception_number": hospital["reception_number"],
-            "lat": hospital["lat"],
-            "lon": hospital["lon"],
-            "distance_km": round(distance, 2),
-            "available_now": available_now,
-            "next_available_in_hours": next_available
-        }
-        results.append(hospital_data)
-        
-    # Sort by Availability (True first), then by distance
-    results.sort(key=lambda x: (not x['available_now'], x['next_available_in_hours'], x['distance_km']))
+            # Determine availability
+            if matching_key:
+                specialists_list = hospital['specialists'][matching_key]
+                # Use 'any' to check if at least one specialist of this type is available
+                available_now = any(s.get('available_now', False) for s in specialists_list)
+                # Shortest wait time if none are available now
+                if available_now:
+                    next_available = 0
+                else:
+                    next_available = min((s.get('next_available_in_hours', 0) for s in specialists_list), default=0)
+            else:
+                # If no specialty provided, just list the hospital
+                available_now = True
+                next_available = 0
+                
+            hospital_data = {
+                "id": hospital["id"],
+                "name": hospital["name"],
+                "address": hospital["address"],
+                "reception_number": hospital["reception_number"],
+                "lat": hospital["lat"],
+                "lon": hospital["lon"],
+                "distance_km": round(distance, 2),
+                "available_now": available_now,
+                "next_available_in_hours": next_available
+            }
+            results.append(hospital_data)
+            
+        # Sort by Availability (True first), then by distance
+        results.sort(key=lambda x: (not x['available_now'], x['next_available_in_hours'], x['distance_km']))
 
-    return jsonify(results)
+        return jsonify(results)
+    except Exception as e:
+        import traceback
+        app.logger.error(f"Error in get_hospitals: {str(e)}\n{traceback.format_exc()}")
+        return jsonify({"error": str(e), "trace": traceback.format_exc()}), 500
 
 @app.route('/api/analyze-prescription', methods=['POST'])
 def analyze_prescription():
