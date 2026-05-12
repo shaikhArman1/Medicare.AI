@@ -173,3 +173,5 @@ mediroute/
 <!-- commit-log: 2026-05-05T09:38:07 - fix: resolve datetime serialization in JSON -->
 
 <!-- commit-log: 2026-05-10T17:14:52 - feat: add health check endpoint for monitoring -->
+
+<!-- commit-log: 2026-05-12T10:05:38 - feat: add API endpoint for data aggregation -->
