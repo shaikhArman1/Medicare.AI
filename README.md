@@ -175,3 +175,5 @@ mediroute/
 <!-- commit-log: 2026-05-10T17:14:52 - feat: add health check endpoint for monitoring -->
 
 <!-- commit-log: 2026-05-12T10:05:38 - feat: add API endpoint for data aggregation -->
+
+<!-- commit-log: 2026-05-12T22:20:16 - refactor: move API base URL to config module -->
