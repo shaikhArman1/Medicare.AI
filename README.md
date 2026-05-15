@@ -183,3 +183,5 @@ mediroute/
 <!-- commit-log: 2026-05-15T15:40:13 - fix: correct JSON serialization in Python response -->
 
 <!-- commit-log: 2026-05-15T17:34:10 - docs: update integration guide for local dev -->
+
+<!-- commit-log: 2026-05-15T20:32:24 - chore: update Axios and FastAPI versions -->
