@@ -181,3 +181,5 @@ mediroute/
 <!-- commit-log: 2026-05-15T12:23:07 - docs: add architecture diagram to README -->
 
 <!-- commit-log: 2026-05-15T15:40:13 - fix: correct JSON serialization in Python response -->
+
+<!-- commit-log: 2026-05-15T17:34:10 - docs: update integration guide for local dev -->
