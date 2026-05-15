@@ -177,3 +177,5 @@ mediroute/
 <!-- commit-log: 2026-05-12T10:05:38 - feat: add API endpoint for data aggregation -->
 
 <!-- commit-log: 2026-05-12T22:20:16 - refactor: move API base URL to config module -->
+
+<!-- commit-log: 2026-05-15T12:23:07 - docs: add architecture diagram to README -->
