@@ -179,3 +179,5 @@ mediroute/
 <!-- commit-log: 2026-05-12T22:20:16 - refactor: move API base URL to config module -->
 
 <!-- commit-log: 2026-05-15T12:23:07 - docs: add architecture diagram to README -->
+
+<!-- commit-log: 2026-05-15T15:40:13 - fix: correct JSON serialization in Python response -->
