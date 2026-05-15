@@ -185,3 +185,5 @@ mediroute/
 <!-- commit-log: 2026-05-15T17:34:10 - docs: update integration guide for local dev -->
 
 <!-- commit-log: 2026-05-15T20:32:24 - chore: update Axios and FastAPI versions -->
+
+<!-- commit-log: 2026-05-15T20:24:38 - refactor: update async request handling in UI -->
