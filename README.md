@@ -189,3 +189,5 @@ mediroute/
 <!-- commit-log: 2026-05-15T20:24:38 - refactor: update async request handling in UI -->
 
 <!-- commit-log: 2026-05-30T10:51:02 - refactor: move API base URL to config module -->
+
+<!-- commit-log: 2026-05-30T11:39:47 - refactor: move API base URL to config module -->
