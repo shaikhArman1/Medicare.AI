@@ -197,3 +197,5 @@ mediroute/
 <!-- commit-log: 2026-05-30T14:00:26 - docs: add architecture diagram to README -->
 
 <!-- commit-log: 2026-05-30T21:36:33 - feat: add health check endpoint for monitoring -->
+
+<!-- commit-log: 2026-05-30T22:43:20 - docs: add architecture diagram to README -->
