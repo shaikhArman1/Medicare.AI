@@ -191,3 +191,5 @@ mediroute/
 <!-- commit-log: 2026-05-30T10:51:02 - refactor: move API base URL to config module -->
 
 <!-- commit-log: 2026-05-30T11:39:47 - refactor: move API base URL to config module -->
+
+<!-- commit-log: 2026-05-30T13:15:23 - feat: add loading state for API-dependent components -->
