@@ -201,3 +201,5 @@ mediroute/
 <!-- commit-log: 2026-05-30T22:43:20 - docs: add architecture diagram to README -->
 
 <!-- commit-log: 2026-05-31T10:26:30 - fix: resolve datetime serialization in JSON -->
+
+<!-- commit-log: 2026-06-16T09:00:03 - feat: add retry logic on failed API calls -->
