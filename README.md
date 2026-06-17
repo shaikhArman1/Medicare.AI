@@ -205,3 +205,5 @@ mediroute/
 <!-- commit-log: 2026-06-16T09:00:03 - feat: add retry logic on failed API calls -->
 
 <!-- commit-log: 2026-06-17T09:07:28 - docs: add architecture diagram to README -->
+
+<!-- commit-log: 2026-06-17T12:56:55 - feat: add API endpoint for data aggregation -->
