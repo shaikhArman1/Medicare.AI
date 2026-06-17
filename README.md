@@ -211,3 +211,5 @@ mediroute/
 <!-- commit-log: 2026-06-17T16:00:39 - fix: align data types between Python models and JS -->
 
 <!-- commit-log: 2026-06-17T17:09:37 - perf: reduce payload size with response filtering -->
+
+<!-- commit-log: 2026-06-17T18:07:47 - chore: sync frontend env config with backend routes -->
