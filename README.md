@@ -209,3 +209,5 @@ mediroute/
 <!-- commit-log: 2026-06-17T12:56:55 - feat: add API endpoint for data aggregation -->
 
 <!-- commit-log: 2026-06-17T16:00:39 - fix: align data types between Python models and JS -->
+
+<!-- commit-log: 2026-06-17T17:09:37 - perf: reduce payload size with response filtering -->
