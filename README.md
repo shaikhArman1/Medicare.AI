@@ -207,3 +207,5 @@ mediroute/
 <!-- commit-log: 2026-06-17T09:07:28 - docs: add architecture diagram to README -->
 
 <!-- commit-log: 2026-06-17T12:56:55 - feat: add API endpoint for data aggregation -->
+
+<!-- commit-log: 2026-06-17T16:00:39 - fix: align data types between Python models and JS -->
