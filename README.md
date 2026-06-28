@@ -213,3 +213,5 @@ mediroute/
 <!-- commit-log: 2026-06-17T17:09:37 - perf: reduce payload size with response filtering -->
 
 <!-- commit-log: 2026-06-17T18:07:47 - chore: sync frontend env config with backend routes -->
+
+<!-- commit-log: 2026-06-28T11:12:57 - fix: resolve CORS issue between frontend and backend -->
