@@ -219,3 +219,5 @@ mediroute/
 <!-- commit-log: 2026-06-28T11:06:53 - feat: add API endpoint for data aggregation -->
 
 <!-- commit-log: 2026-06-28T14:46:24 - fix: handle 500 errors gracefully with user feedback -->
+
+<!-- commit-log: 2026-06-28T15:52:17 - feat: add pagination support to list endpoints -->
