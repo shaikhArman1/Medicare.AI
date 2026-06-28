@@ -217,3 +217,5 @@ mediroute/
 <!-- commit-log: 2026-06-28T11:12:57 - fix: resolve CORS issue between frontend and backend -->
 
 <!-- commit-log: 2026-06-28T11:06:53 - feat: add API endpoint for data aggregation -->
+
+<!-- commit-log: 2026-06-28T14:46:24 - fix: handle 500 errors gracefully with user feedback -->
