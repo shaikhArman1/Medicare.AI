@@ -227,3 +227,5 @@ mediroute/
 <!-- commit-log: 2026-06-30T13:37:49 - docs: add architecture diagram to README -->
 
 <!-- commit-log: 2026-06-30T20:32:05 - feat: add API endpoint for data aggregation -->
+
+<!-- commit-log: 2026-06-30T20:13:46 - chore: update Axios and FastAPI versions -->
