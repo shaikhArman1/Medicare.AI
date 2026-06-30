@@ -223,3 +223,5 @@ mediroute/
 <!-- commit-log: 2026-06-28T15:52:17 - feat: add pagination support to list endpoints -->
 
 <!-- commit-log: 2026-06-28T18:36:13 - fix: handle 500 errors gracefully with user feedback -->
+
+<!-- commit-log: 2026-06-30T13:37:49 - docs: add architecture diagram to README -->
