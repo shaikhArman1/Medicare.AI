@@ -229,3 +229,5 @@ mediroute/
 <!-- commit-log: 2026-06-30T20:32:05 - feat: add API endpoint for data aggregation -->
 
 <!-- commit-log: 2026-06-30T20:13:46 - chore: update Axios and FastAPI versions -->
+
+<!-- commit-log: 2026-06-30T21:38:50 - fix: resolve datetime serialization in JSON -->
