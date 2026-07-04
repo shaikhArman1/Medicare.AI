@@ -237,3 +237,5 @@ mediroute/
 <!-- commit-log: 2026-07-04T11:10:02 - feat: add retry logic on failed API calls -->
 
 <!-- commit-log: 2026-07-04T12:24:04 - chore: update Axios and FastAPI versions -->
+
+<!-- commit-log: 2026-07-04T12:39:29 - refactor: update async request handling in UI -->
