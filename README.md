@@ -241,3 +241,5 @@ mediroute/
 <!-- commit-log: 2026-07-04T12:39:29 - refactor: update async request handling in UI -->
 
 <!-- commit-log: 2026-07-04T15:36:10 - feat: add retry logic on failed API calls -->
+
+<!-- commit-log: 2026-07-04T17:26:39 - feat: improve error boundary in React app -->
