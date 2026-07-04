@@ -233,3 +233,5 @@ mediroute/
 <!-- commit-log: 2026-06-30T21:38:50 - fix: resolve datetime serialization in JSON -->
 
 <!-- commit-log: 2026-06-30T22:56:42 - refactor: update async request handling in UI -->
+
+<!-- commit-log: 2026-07-04T11:10:02 - feat: add retry logic on failed API calls -->
