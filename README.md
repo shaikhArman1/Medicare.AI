@@ -247,3 +247,5 @@ mediroute/
 <!-- commit-log: 2026-07-09T09:22:38 - feat: improve error boundary in React app -->
 
 <!-- commit-log: 2026-07-09T12:13:17 - chore: sync frontend env config with backend routes -->
+
+<!-- commit-log: 2026-07-09T16:37:13 - feat: add retry logic on failed API calls -->
