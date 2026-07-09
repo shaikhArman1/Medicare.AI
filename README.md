@@ -251,3 +251,5 @@ mediroute/
 <!-- commit-log: 2026-07-09T16:37:13 - feat: add retry logic on failed API calls -->
 
 <!-- commit-log: 2026-07-09T17:33:13 - feat: add pagination support to list endpoints -->
+
+<!-- commit-log: 2026-07-09T19:50:11 - feat: add health check endpoint for monitoring -->
