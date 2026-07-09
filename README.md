@@ -249,3 +249,5 @@ mediroute/
 <!-- commit-log: 2026-07-09T12:13:17 - chore: sync frontend env config with backend routes -->
 
 <!-- commit-log: 2026-07-09T16:37:13 - feat: add retry logic on failed API calls -->
+
+<!-- commit-log: 2026-07-09T17:33:13 - feat: add pagination support to list endpoints -->
