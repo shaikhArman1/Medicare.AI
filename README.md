@@ -243,3 +243,5 @@ mediroute/
 <!-- commit-log: 2026-07-04T15:36:10 - feat: add retry logic on failed API calls -->
 
 <!-- commit-log: 2026-07-04T17:26:39 - feat: improve error boundary in React app -->
+
+<!-- commit-log: 2026-07-09T09:22:38 - feat: improve error boundary in React app -->
