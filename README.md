@@ -255,3 +255,5 @@ mediroute/
 <!-- commit-log: 2026-07-09T19:50:11 - feat: add health check endpoint for monitoring -->
 
 <!-- commit-log: 2026-07-11T12:27:26 - fix: handle 500 errors gracefully with user feedback -->
+
+<!-- commit-log: 2026-07-11T13:03:52 - chore: sync frontend env config with backend routes -->
