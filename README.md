@@ -257,3 +257,5 @@ mediroute/
 <!-- commit-log: 2026-07-11T12:27:26 - fix: handle 500 errors gracefully with user feedback -->
 
 <!-- commit-log: 2026-07-11T13:03:52 - chore: sync frontend env config with backend routes -->
+
+<!-- commit-log: 2026-07-11T19:34:43 - feat: add retry logic on failed API calls -->
