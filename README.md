@@ -253,3 +253,5 @@ mediroute/
 <!-- commit-log: 2026-07-09T17:33:13 - feat: add pagination support to list endpoints -->
 
 <!-- commit-log: 2026-07-09T19:50:11 - feat: add health check endpoint for monitoring -->
+
+<!-- commit-log: 2026-07-11T12:27:26 - fix: handle 500 errors gracefully with user feedback -->
