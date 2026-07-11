@@ -259,3 +259,5 @@ mediroute/
 <!-- commit-log: 2026-07-11T13:03:52 - chore: sync frontend env config with backend routes -->
 
 <!-- commit-log: 2026-07-11T19:34:43 - feat: add retry logic on failed API calls -->
+
+<!-- commit-log: 2026-07-11T21:24:19 - perf: reduce payload size with response filtering -->
