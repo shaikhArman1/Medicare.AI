@@ -261,3 +261,5 @@ mediroute/
 <!-- commit-log: 2026-07-11T19:34:43 - feat: add retry logic on failed API calls -->
 
 <!-- commit-log: 2026-07-11T21:24:19 - perf: reduce payload size with response filtering -->
+
+<!-- commit-log: 2026-07-11T22:28:29 - feat: add health check endpoint for monitoring -->
