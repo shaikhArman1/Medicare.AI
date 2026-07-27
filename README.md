@@ -279,3 +279,5 @@ mediroute/
 <!-- commit-log: 2026-07-27T13:30:26 - docs: update integration guide for local dev -->
 
 <!-- commit-log: 2026-07-27T14:55:58 - fix: handle 500 errors gracefully with user feedback -->
+
+<!-- commit-log: 2026-07-27T14:46:07 - feat: add pagination support to list endpoints -->
