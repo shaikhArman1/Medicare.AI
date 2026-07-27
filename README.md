@@ -267,3 +267,5 @@ mediroute/
 <!-- commit-log: 2026-07-21T14:16:05 - docs: update integration guide for local dev -->
 
 <!-- commit-log: 2026-07-27T11:12:58 - fix: handle 500 errors gracefully with user feedback -->
+
+<!-- commit-log: 2026-07-27T11:17:26 - fix: correct JSON serialization in Python response -->
