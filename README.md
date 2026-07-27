@@ -283,3 +283,5 @@ mediroute/
 <!-- commit-log: 2026-07-27T14:46:07 - feat: add pagination support to list endpoints -->
 
 <!-- commit-log: 2026-07-27T16:54:41 - refactor: update async request handling in UI -->
+
+<!-- commit-log: 2026-07-27T21:18:06 - feat: add pagination support to list endpoints -->
