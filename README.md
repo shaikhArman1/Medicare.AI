@@ -273,3 +273,5 @@ mediroute/
 <!-- commit-log: 2026-07-27T12:28:17 - fix: align data types between Python models and JS -->
 
 <!-- commit-log: 2026-07-27T12:54:50 - fix: correct JSON serialization in Python response -->
+
+<!-- commit-log: 2026-07-27T13:50:00 - fix: resolve CORS issue between frontend and backend -->
